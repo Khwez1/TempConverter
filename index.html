@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
+    
     <div id="temperatureConverter">
         <label for="fahrenheit">Temperature (Fahrenheit):</label>
-        <input type="text" id="fahrenheit" placeholder="Enter temperature in Fahrenheit">
+        <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit">
 
-        <button onclick="convertToFahrenheit()">Convert to Celsius</button>
+        <button onclick="celsiusToFahrenheit()">Convert to Celsius</button>
 
         <label for="celsius">Temperature (Celsius):</label>
-        <input type="text" id="celsius" readonly>
+        <input type="number" id="celsius" readonly>
+    </div>
+    <div id="temperatureConverter">
+        <label for="celsius">Temperature (celsius):</label>
+        <input type="number" id="celsius" placeholder="Enter temperature in celsius">
+
+        <button onclick="fahrenheitToCelsius()">Convert to Celsius</button>
+
+        <label for="fahrenheit">Temperature (fahrenheit):</label>
+        <input type="number" id="fahrenheit" readonly>
     </div>
 
     <script src="/tempCvrt.js"></script>
